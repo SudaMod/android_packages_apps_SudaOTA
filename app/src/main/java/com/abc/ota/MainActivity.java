@@ -14,31 +14,31 @@
  * limitations under the License.
  */
 
-package com.fusionjack.slimota;
+package com.abc.ota;
 
 import android.app.Fragment;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.view.MenuItem;
 
-import com.fusionjack.slimota.configs.LinkConfig;
-import com.fusionjack.slimota.dialogs.WaitDialogFragment;
-import com.fusionjack.slimota.fragments.SlimOTAFragment;
+import com.abc.ota.configs.LinkConfig;
+import com.abc.ota.dialogs.WaitDialogFragment;
+import com.abc.ota.fragments.ABCOTAFragment;
 
 public class MainActivity extends PreferenceActivity implements
         WaitDialogFragment.OTADialogListener, LinkConfig.LinkConfigListener {
 
-    private static final String FRAGMENT_TAG = SlimOTAFragment.class.getName();
-    private SlimOTAFragment mFragment;
+    private static final String FRAGMENT_TAG = ABCOTAFragment.class.getName();
+    private ABCOTAFragment mFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mFragment = (SlimOTAFragment) getFragmentManager().findFragmentByTag(FRAGMENT_TAG);
+        mFragment = (ABCOTAFragment) getFragmentManager().findFragmentByTag(FRAGMENT_TAG);
         if (mFragment == null) {
             getFragmentManager().beginTransaction()
-                    .replace(android.R.id.content, new SlimOTAFragment(), FRAGMENT_TAG)
+                    .replace(android.R.id.content, new ABCOTAFragment(), FRAGMENT_TAG)
                     .commit();
         }
 
@@ -47,7 +47,7 @@ public class MainActivity extends PreferenceActivity implements
 
     @Override
     protected boolean isValidFragment(String fragmentName) {
-        return SlimOTAFragment.class.getName().equalsIgnoreCase(fragmentName);
+        return ABCOTAFragment.class.getName().equalsIgnoreCase(fragmentName);
     }
 
     @Override

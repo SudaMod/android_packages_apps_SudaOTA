@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.fusionjack.slimota.utils;
+package com.abc.ota.utils;
 
 import android.content.Context;
 import android.os.AsyncTask;
 
-import com.fusionjack.slimota.R;
+import com.abc.ota.R;
 
 import java.io.File;
 import java.io.FileNotFoundException;
