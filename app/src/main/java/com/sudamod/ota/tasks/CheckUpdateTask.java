@@ -154,6 +154,7 @@ public class CheckUpdateTask extends AsyncTask<Context, Void, OTADevice> {
     }
 
     private void showNotification(Context context) {
+<<<<<<< HEAD:app/src/main/java/com/sudamod/ota/tasks/CheckUpdateTask.java
         NotificationManager notificationManager =
                 (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         int notifyID = 1;
@@ -179,5 +180,34 @@ public class CheckUpdateTask extends AsyncTask<Context, Void, OTADevice> {
                 PendingIntent.FLAG_ONE_SHOT);
         mBuilder.setContentIntent(pendingIntent);
         notificationManager.notify(notifyID, mBuilder.build());
+=======
+        if (mIsBackgroundThread) {
+            NotificationManager notificationManager =
+                    (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+            int notifyID = 1;
+            String id = "abcota_channel";
+            CharSequence name = context.getString(R.string.abc_channel);
+            String description = context.getString(R.string.abc_channel_description);
+            int importance = NotificationManager.IMPORTANCE_LOW;
+            NotificationChannel mChannel = new NotificationChannel(id, name, importance);
+            mChannel.setDescription(description);
+            notificationManager.createNotificationChannel(mChannel);
+
+            NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(context.getApplicationContext())
+                    .setSmallIcon(R.drawable.ic_notification_abc)
+                    .setContentTitle(context.getString(R.string.notification_title))
+                    .setContentText(context.getString(R.string.notification_message))
+                    .setOnlyAlertOnce(true)
+                    .setAutoCancel(true)
+                    .setChannelId(id);
+
+            Intent intent = new Intent(context, MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            final PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent,
+                    PendingIntent.FLAG_ONE_SHOT);
+            mBuilder.setContentIntent(pendingIntent);
+            notificationManager.notify(notifyID, mBuilder.build());
+        }
+>>>>>>> 2339238... ABCOTA: rework automatic updates with JobService:app/src/main/java/com/abc/ota/tasks/CheckUpdateTask.java
     }
 }
