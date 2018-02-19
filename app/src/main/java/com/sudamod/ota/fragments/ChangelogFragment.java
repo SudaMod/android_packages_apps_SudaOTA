@@ -1,5 +1,5 @@
 /*
-    Copyright (C) 2016 Nitrogen Project
+    Copyright (C) 2018 Nitrogen Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -102,7 +102,7 @@ public class ChangelogFragment extends PreferenceFragment {
         m = committer.matcher(data);
         while (m.find()){
             sb.setSpan(new ForegroundColorSpan(color), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
-            sb.setSpan(new StyleSpan(Typeface.ITALIC), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+            sb.setSpan(new StyleSpan(Typeface.NORMAL), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         }
         m = title.matcher(data);
         while (m.find()){
