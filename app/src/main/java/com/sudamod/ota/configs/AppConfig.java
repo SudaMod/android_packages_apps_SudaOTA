@@ -24,7 +24,6 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-import com.commonsware.cwac.wakeful.WakefulIntentService;
 import com.sudamod.ota.R;
 import com.sudamod.ota.tasks.OTAService;
 import com.sudamod.ota.utils.OTAUtils;
