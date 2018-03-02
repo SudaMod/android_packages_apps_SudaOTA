@@ -25,7 +25,7 @@ import com.sudamod.ota.tasks.CheckUpdateTask;
 public class OTAService extends WakefulIntentService {
 
     public OTAService() {
-        super("ABCOTA");
+        super("SudaOTA");
     }
 
     @Override
