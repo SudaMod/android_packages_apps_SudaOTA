@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.abc.ota.dialogs;
+package com.sudamod.ota.dialogs;
 
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -22,7 +22,7 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 
-import com.abc.ota.R;
+import com.sudamod.ota.R;
 
 public class WaitDialogFragment extends DialogFragment {
 

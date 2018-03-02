@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.abc.ota.configs;
+package com.sudamod.ota.configs;
 
 import android.app.AlarmManager;
 import android.content.Context;
@@ -22,9 +22,9 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
 import com.commonsware.cwac.wakeful.WakefulIntentService;
-import com.abc.ota.R;
-import com.abc.ota.scheduler.OTAListener;
-import com.abc.ota.utils.OTAUtils;
+import com.sudamod.ota.R;
+import com.sudamod.ota.scheduler.OTAListener;
+import com.sudamod.ota.utils.OTAUtils;
 
 import java.text.DateFormat;
 import java.util.Date;

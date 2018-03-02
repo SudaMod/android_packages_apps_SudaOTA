@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.abc.ota.dialogs;
+package com.sudamod.ota.dialogs;
 
 import android.app.Activity;
 import android.app.Fragment;

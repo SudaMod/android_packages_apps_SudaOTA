@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.abc.ota.configs;
+package com.sudamod.ota.configs;
 
 import android.content.Context;
 
-import com.abc.ota.xml.OTALink;
-import com.abc.ota.xml.OTAParser;
-import com.abc.ota.utils.OTAUtils;
+import com.sudamod.ota.xml.OTALink;
+import com.sudamod.ota.xml.OTAParser;
+import com.sudamod.ota.utils.OTAUtils;
 
 import org.json.JSONArray;
 import org.json.JSONException;

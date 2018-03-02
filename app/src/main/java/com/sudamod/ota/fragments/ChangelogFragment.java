@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.abc.ota.fragments;
+package com.sudamod.ota.fragments;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -24,8 +24,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.abc.ota.R;
-import com.abc.ota.utils.Changelog;
+import com.sudamod.ota.R;
+import com.sudamod.ota.utils.Changelog;
 
 public class ChangelogFragment extends PreferenceFragment {
 

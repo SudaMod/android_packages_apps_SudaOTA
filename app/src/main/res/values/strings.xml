@@ -18,8 +18,8 @@
 <resources>
 
     <!-- App -->
-    <string name="app_name">ABC ROM updates</string>
-    <string name="app_title">ABC ROM updates</string>
+    <string name="app_name">SudaMod updates</string>
+    <string name="app_title">SudaMod updates</string>
 
     <!-- Categories -->
     <string name="ota_category">OTA</string>

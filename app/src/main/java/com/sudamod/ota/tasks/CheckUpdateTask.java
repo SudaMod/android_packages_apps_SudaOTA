@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.abc.ota.tasks;
+package com.sudamod.ota.tasks;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -28,16 +28,16 @@ import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Message;
 
-import com.abc.ota.MainActivity;
-import com.abc.ota.R;
-import com.abc.ota.configs.AppConfig;
-import com.abc.ota.configs.LinkConfig;
-import com.abc.ota.configs.OTAConfig;
-import com.abc.ota.configs.OTAVersion;
-import com.abc.ota.dialogs.WaitDialogHandler;
-import com.abc.ota.utils.OTAUtils;
-import com.abc.ota.xml.OTADevice;
-import com.abc.ota.xml.OTAParser;
+import com.sudamod.ota.MainActivity;
+import com.sudamod.ota.R;
+import com.sudamod.ota.configs.AppConfig;
+import com.sudamod.ota.configs.LinkConfig;
+import com.sudamod.ota.configs.OTAConfig;
+import com.sudamod.ota.configs.OTAVersion;
+import com.sudamod.ota.dialogs.WaitDialogHandler;
+import com.sudamod.ota.utils.OTAUtils;
+import com.sudamod.ota.xml.OTADevice;
+import com.sudamod.ota.xml.OTAParser;
 
 import org.xmlpull.v1.XmlPullParserException;
 

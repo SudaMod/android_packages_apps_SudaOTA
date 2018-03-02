@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.abc.ota.utils;
+package com.sudamod.ota.utils;
 
 import android.content.Context;
 import android.os.AsyncTask;
 
-import com.abc.ota.R;
+import com.sudamod.ota.R;
 
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.abc.ota.xml;
+package com.sudamod.ota.xml;
 
 import android.util.Xml;
 

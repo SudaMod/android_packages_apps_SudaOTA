@@ -1,4 +1,4 @@
-package com.abc.ota;
+package com.sudamod.ota;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.abc.ota.configs;
+package com.sudamod.ota.configs;
 
 import android.content.Context;
 
-import com.abc.ota.utils.OTAUtils;
+import com.sudamod.ota.utils.OTAUtils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.abc.ota.scheduler;
+package com.sudamod.ota.scheduler;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -25,8 +25,8 @@ import android.net.NetworkInfo;
 import android.os.SystemClock;
 
 import com.commonsware.cwac.wakeful.WakefulIntentService;
-import com.abc.ota.configs.AppConfig;
-import com.abc.ota.utils.OTAUtils;
+import com.sudamod.ota.configs.AppConfig;
+import com.sudamod.ota.utils.OTAUtils;
 
 public class OTAListener implements WakefulIntentService.AlarmListener {
 

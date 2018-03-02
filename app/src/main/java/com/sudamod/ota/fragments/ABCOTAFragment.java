@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.abc.ota.fragments;
+package com.sudamod.ota.fragments;
 
 import android.app.FragmentTransaction;
 import android.content.SharedPreferences;
@@ -26,18 +26,18 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
 
-import com.abc.ota.R;
-import com.abc.ota.configs.AppConfig;
-import com.abc.ota.configs.LinkConfig;
-import com.abc.ota.configs.OTAVersion;
-import com.abc.ota.dialogs.WaitDialogFragment;
-import com.abc.ota.tasks.CheckUpdateTask;
-import com.abc.ota.utils.OTAUtils;
-import com.abc.ota.xml.OTALink;
+import com.sudamod.ota.R;
+import com.sudamod.ota.configs.AppConfig;
+import com.sudamod.ota.configs.LinkConfig;
+import com.sudamod.ota.configs.OTAVersion;
+import com.sudamod.ota.dialogs.WaitDialogFragment;
+import com.sudamod.ota.tasks.CheckUpdateTask;
+import com.sudamod.ota.utils.OTAUtils;
+import com.sudamod.ota.xml.OTALink;
 
 import java.util.List;
 
-public class ABCOTAFragment extends PreferenceFragment implements
+public class SudaOTAFragment extends PreferenceFragment implements
         Preference.OnPreferenceChangeListener,
         SharedPreferences.OnSharedPreferenceChangeListener ,
         WaitDialogFragment.OTADialogListener,
@@ -61,7 +61,7 @@ public class ABCOTAFragment extends PreferenceFragment implements
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
 
-        addPreferencesFromResource(R.xml.abc_ota);
+        addPreferencesFromResource(R.xml.sudamod.ota);
 
         mRomInfo = (PreferenceScreen) getPreferenceScreen().findPreference(KEY_ROM_INFO);
         mCheckUpdate = (PreferenceScreen) getPreferenceScreen().findPreference(KEY_CHECK_UPDATE);

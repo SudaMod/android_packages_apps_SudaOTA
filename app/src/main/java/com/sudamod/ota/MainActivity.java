@@ -14,31 +14,31 @@
  * limitations under the License.
  */
 
-package com.abc.ota;
+package com.sudamod.ota;
 
 import android.app.Fragment;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.view.MenuItem;
 
-import com.abc.ota.configs.LinkConfig;
-import com.abc.ota.dialogs.WaitDialogFragment;
-import com.abc.ota.fragments.ABCOTAFragment;
+import com.sudamod.ota.configs.LinkConfig;
+import com.sudamod.ota.dialogs.WaitDialogFragment;
+import com.sudamod.ota.fragments.SudaOTAFragment;
 
 public class MainActivity extends PreferenceActivity implements
         WaitDialogFragment.OTADialogListener, LinkConfig.LinkConfigListener {
 
-    private static final String FRAGMENT_TAG = ABCOTAFragment.class.getName();
-    private ABCOTAFragment mFragment;
+    private static final String FRAGMENT_TAG = SudaOTAFragment.class.getName();
+    private SudaOTAFragment mFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mFragment = (ABCOTAFragment) getFragmentManager().findFragmentByTag(FRAGMENT_TAG);
+        mFragment = (SudaOTAFragment) getFragmentManager().findFragmentByTag(FRAGMENT_TAG);
         if (mFragment == null) {
             getFragmentManager().beginTransaction()
-                    .replace(android.R.id.content, new ABCOTAFragment(), FRAGMENT_TAG)
+                    .replace(android.R.id.content, new SudaOTAFragment(), FRAGMENT_TAG)
                     .commit();
         }
 
@@ -47,7 +47,7 @@ public class MainActivity extends PreferenceActivity implements
 
     @Override
     protected boolean isValidFragment(String fragmentName) {
-        return ABCOTAFragment.class.getName().equalsIgnoreCase(fragmentName);
+        return SudaOTAFragment.class.getName().equalsIgnoreCase(fragmentName);
     }
 
     @Override
